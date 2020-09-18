@@ -1,10 +1,10 @@
 #include <stdio.h>
 
+extern void print_all(int n, char **s);
+
 int main(int argc, char **argv) {
   printf("hello world!\n");
-  for (int i = 0; i<argc; i++) {
-    printf("%s\n",argv[i]);
-  }
+  print_all(argc,argv);
   return 0;
 }
 
